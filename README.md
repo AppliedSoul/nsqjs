@@ -1,7 +1,8 @@
 nsqjs
 =====
+Without optional snappystream dependencies.   
 
-The official NodeJS client for the [nsq](http://nsq.io/) client protocol. This implementation attempts to be
+~~The official NodeJS client~~ for the [nsq](http://nsq.io/) client protocol. This implementation attempts to be
 fully compliant and maintain feature parity with the official Go ([go-nsq](https://github.com/nsqio/go-nsq)) and Python ([pynsq](https://github.com/nsqio/pynsq)) clients.
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/dudleycarr/nsqjs.svg)](https://greenkeeper.io/)
@@ -124,7 +125,7 @@ instance.
   soft timeout by the normal timeout amount.
 
 ### new Writer(nsqdHost, nsqdPort, options)
-Allows messages to be sent to an nsqd. 
+Allows messages to be sent to an nsqd.
 
 Available Writer options:
 * ```tls: false``` <br/>
@@ -269,7 +270,7 @@ w.on('ready', () => {
   w.publish('sample_topic', 'it really tied the room together')
   w.deferPublish('sample_topic', ['This message gonna arrive 1 sec later.'], 1000)
   w.publish('sample_topic', [
-    'Uh, excuse me. Mark it zero. Next frame.', 
+    'Uh, excuse me. Mark it zero. Next frame.',
     'Smokey, this is not \'Nam. This is bowling. There are rules.'
   ])
   w.publish('sample_topic', 'Wu?',  err => {
@@ -330,7 +331,7 @@ Changes
   * Bug: Non-fatal nsqd errors would cause RDY count to decrease and never
     return to normal. This will happen for example when finishing messages
     that have exceeded their amount of time to process a message.
-  * 
+  *
 * **0.7.10**
   * Properly handles non-string errors
 * **0.7.9**
