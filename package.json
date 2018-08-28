@@ -1,11 +1,11 @@
 {
-  "name": "nsqjs",
-  "description": "NodeJS client for NSQ",
+  "name": "snappyless-nsqjs",
+  "description": "NodeJS client for NSQ without snappy",
   "version": "0.10.1",
   "homepage": "https://github.com/dudleycarr/nsqjs",
   "author": {
-    "name": "Dudley Carr",
-    "email": "dudley.carr@gmail.com"
+    "name": "Noel Gaur",
+    "email": "noelgaur@qq.com"
   },
   "keywords": [
     "nsq",
